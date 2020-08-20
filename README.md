@@ -1,2 +1,8 @@
-# devBoost-exercicio-1
-## projeto de teste do primeiro exercício do devBoost
+# Grupo 3 - DevBoost Itaú
+
+## Integrantes
+
+- Erikson Gonçalves Bezerra
+- Gabi Leandro
+- Leandro Almeida
+- Wederson
