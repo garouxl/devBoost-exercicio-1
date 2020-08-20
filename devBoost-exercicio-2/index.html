@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link type="text/css" rel="stylesheet" href="styles.css" />
+    <script type="text/javascript" src="./scripts.js"></script>
+    <title>Tarefas e Reports</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <h1>Tarefas e Reports</h1>
+      </header>
+
+      <section id="newTask">
+        <input
+          type="text"
+          name="task"
+          value=""
+          placeholder="Descreva a tarefa..."
+        />
+        <button id="btnAddTask">+</button>
+      </section>
+
+      <section class="list-task"></section>
+
+      <footer class="list-task result">
+        <div class="list-task-item">
+          <input
+            type="text"
+            name="task-description"
+            value="Total trabalhado"
+            disabled
+          />
+          <input type="text" name="task-hour" value="00:00:00" disabled />
+          <button class="btn-start-stop">Calcular</button>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
