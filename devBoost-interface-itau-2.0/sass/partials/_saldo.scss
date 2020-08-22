@@ -1,3 +1,37 @@
+.col-md-4 {
+  span, a.link {
+    float: right;
+  }
+  & a.link {
+    font-size: 1.5rem;
+    color: $linkCardColor;
+    margin-right: 10px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  & a.link:hover {
+    color: $linkCardColorHover;
+  }
+}
+
 .saldo {
-  color: red
+  padding: 10px;
+
+  & ul li.list-values-item {
+    position: relative;
+    display: block;
+    margin-bottom: -1px;
+    padding: 10px 15px;
+    border-bottom: 1px solid $border;
+    line-height: 3rem;
+  }
+  & p {
+    padding: 10px 15px;
+  }
+  
+  & p.total {
+    margin-top: 35px;
+    font-size: 2rem;
+    font-weight: 500;
+  }
 }

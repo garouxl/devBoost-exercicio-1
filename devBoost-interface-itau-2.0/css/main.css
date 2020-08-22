@@ -11,7 +11,8 @@
   outline: none; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  background-color: #121212; }
 
 body {
   box-sizing: border-box; }
@@ -24,6 +25,13 @@ h3 {
 
 p {
   font-size: 1.4rem; }
+
+.card {
+  background-color: #1E1E1E;
+  border: 1px solid #363636;
+  border-radius: 8px;
+  color: #ffffff;
+  padding: 1.6rem; }
 
 .header {
   position: relative;
@@ -114,11 +122,55 @@ p {
       background-color: #1e1e1e;
       padding: 0 3rem 0 0; }
 
+.col-md-4 span, .col-md-4 a.link {
+  float: right; }
+
+.col-md-4 a.link {
+  font-size: 1.5rem;
+  color: #E2E8F0;
+  margin-right: 10px;
+  text-decoration: none;
+  cursor: pointer; }
+
+.col-md-4 a.link:hover {
+  color: #EC7000; }
+
 .saldo {
-  color: red; }
+  padding: 10px; }
+  .saldo ul li.list-values-item {
+    position: relative;
+    display: block;
+    margin-bottom: -1px;
+    padding: 10px 15px;
+    border-bottom: 1px solid #363636;
+    line-height: 3rem; }
+  .saldo p {
+    padding: 10px 15px; }
+  .saldo p.total {
+    margin-top: 35px;
+    font-size: 2rem;
+    font-weight: 500; }
 
 .gerente {
-  color: blue; }
+  margin-top: 2%; }
+  .gerente h2.nome {
+    margin: 10px 10px; }
+  .gerente p.title {
+    margin: 0 10px 35px;
+    border-bottom: 1px solid #363636;
+    padding-bottom: 3rem;
+    color-interpolation-filters: auto; }
+  .gerente ul li.list-contatos-item {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    line-height: 10px; }
+  .gerente img.avatar {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    float: right; }
 
 .lancamentos {
   color: green; }
