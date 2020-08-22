@@ -26,7 +26,8 @@ p {
   font-size: 1.4rem; }
 
 .header {
-  color: orange; }
+  display: fixed;
+  border: 1px solid red; }
 
 .saldo {
   color: red; }
@@ -37,10 +38,5 @@ p {
 .lancamentos {
   color: green; }
 
-.card {
-  background-color: #1E1E1E;
-  border: 1px solid #363636;
-  border-radius: 8px;
-  color: #ffffff;
-  padding: 1.6rem;
-}
+.credito {
+  color: grey; }
