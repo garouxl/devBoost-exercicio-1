@@ -1,6 +1,9 @@
 $bg-dark-black: #121212;
 $bg-light-black: #1E1E1E;
 $border: #363636;
+$linkCardColor: #E2E8F0;
+$linkCardColorHover: #EC7000;
+$defaultTextColor: #FFF;
 
 *,
 *::after,
@@ -26,7 +29,7 @@ body {
 }
 
 h2 {
-  font-size: 2.4rem
+  font-size: 2.4rem;
 }
 
 h3 {
