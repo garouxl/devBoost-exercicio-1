@@ -1,42 +1,61 @@
-*,
-*::after,
-*::before {
+*, *::after, *::before {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
   outline: 0;
-  backface-visibility: hidden; }
+  backface-visibility: hidden;
+}
 
 *:focus {
-  outline: none; }
+  outline: none;
+}
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  background-color: #121212;
+}
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 h2 {
-  font-size: 2.4rem; }
+  font-size: 2.4rem;
+}
 
 h3 {
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+}
 
 p {
-  font-size: 1.4rem; }
+  font-size: 1.4rem;
+}
 
 .header {
   display: fixed;
-  border: 1px solid red; }
+  border: 1px solid red;
+}
 
 .saldo {
-  color: red; }
+  color: red;
+}
 
 .gerente {
-  color: blue; }
+  color: blue;
+}
 
 .lancamentos {
-  color: green; }
+  color: green;
+}
 
 .credito {
-  color: grey; }
+  color: grey;
+}
+
+.card {
+  background-color: #1E1E1E;
+  border: 1px solid #363636;
+  border-radius: 8px;
+  color: #ffffff;
+  padding: 1.6rem;
+}
