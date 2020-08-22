@@ -26,6 +26,10 @@ h3 {
 p {
   font-size: 1.4rem; }
 
+.wrapper {
+  width: 124rem;
+  margin: auto; }
+
 .card {
   background-color: #1E1E1E;
   border: 1px solid #363636;
@@ -40,9 +44,9 @@ header + section {
   position: fixed;
   background-color: #1E1E1E;
   color: #fff;
-  padding: 2.9rem 0 0 3.5rem;
+  padding: 2.9rem 3.5rem 0 3.5rem;
   height: 12.8rem;
-  width: 100%;
+  width: 124rem;
   top: 0;
   z-index: 999; }
   .header::after {
@@ -90,7 +94,7 @@ header + section {
     background-repeat: no-repeat;
     background-position: 7px 24px;
     background-color: #1E1E1E;
-    width: 44.8rem;
+    width: 29rem;
     border-bottom: 1px solid;
     padding: 1.9rem 1rem .9rem 4rem;
     font-size: 1.9rem; }
@@ -120,7 +124,8 @@ header + section {
     margin: 0 0 0 5.4rem;
     border-left: 1px solid #FFF;
     padding: 1.8rem 0 0 2.5rem;
-    height: 7rem; }
+    height: 7rem;
+    float: right; }
     .header__sign-out p {
       font-size: 2.4rem;
       background-image: url(../../img/seta.png);
@@ -131,10 +136,7 @@ header + section {
 
 @media (max-width: 800px) {
   .header__search, .header__profile {
-    display: none; }
-  .header__sign-out {
-    float: right;
-    margin: 0 2rem 0 5.4rem; } }
+    display: none; } }
 
 .col-md-4 span, .col-md-4 a.link {
   float: right; }

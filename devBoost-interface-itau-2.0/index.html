@@ -23,55 +23,73 @@
 </head>
 
 <body>
-  <header class="header">
-    <a class="header__logo-link" href="/" title="Itau Internet Banking 2.0">
-      <img width="67" height="67" class="header__logo-img" src="img/logo.svg" alt="logo do Itau">
-    </a>
-    <nav class="header__menu">
-      <span class="header__menu-gliph"></span>
-      <span class="header__menu-cta">menu</span>
-    </nav>
-    <input class="header__search" type="search" name="search" id="search" placeholder="Buscar...">
-    <section class="header__profile">
-      <p class="header__profile-title">João Silva</p>
-      <div>
-        <p><strong>Ag</strong></p>
-        <p>1234</p>
+  <div class="wrapper">
+    <header class="header">
+      <a class="header__logo-link" href="/" title="Itau Internet Banking 2.0">
+        <img width="67" height="67" class="header__logo-img" src="img/logo.svg" alt="logo do Itau">
+      </a>
+      <nav class="header__menu">
+        <span class="header__menu-gliph"></span>
+        <span class="header__menu-cta">menu</span>
+      </nav>
+      <input class="header__search" type="search" name="search" id="search" placeholder="Buscar...">
+      <section class="header__profile">
+        <p class="header__profile-title">João Silva</p>
+        <div>
+          <p><strong>Ag</strong></p>
+          <p>1234</p>
+        </div>
+        <div>
+          <p><strong>Conta</strong></p>
+          <p>12345-5</p>
+        </div>
+      </section>
+      <section class="header__sign-out">
+        <p>sair</p>
+        <i></i>
+      </section>
+    </header>
+
+    <!-- Primeira linha -->
+    <section>
+      <div class="col-md-8">
+        <div class="card">
+          <p>gabi teste</p>
+        </div>
       </div>
-      <div>
-        <p><strong>Conta</strong></p>
-        <p>12345-5</p>
+
+      <div class="col-md-4 saldo" >
+        <h2>Saldos <a class="link">Ver extrato</a></h2>
+        <div class="card">
+          <p><span class="glyphicon glyphicon-eye-open" aria-hidden="true" id="btn-saldo"></span></p>
+          <ul class="list-values">
+            <li class="list-values-item">Saldo em conta corrente <span class="saldo">R$ 1.000,00</span></li>
+            <li class="list-values-item">Saldo em conta poupança <span class="saldo">R$ 6.000,00</span></li>
+          </ul>
+          <p class="total">Saldo Total: <span class="saldo">R$ 7.000,00</span></p>
+        </div>
       </div>
     </section>
-    <section class="header__sign-out">
-      <p>sair</p>
-      <i></i>
-    </section>
-  </header>
 
-  <!-- Primeira linha -->
-  <section>
-    <div class="col-md-8">
-      <div class="card">
-        <p>gabi teste</p>
+    <!-- Segunda linha -->
+    <section>
+      <div class="col-md-8">
+        <p>bloco 1</p>
       </div>
-    </div>
 
-    <div class="col-md-4">
-      <p>bloco 2</p>
-    </div>
-  </section>
-
-  <!-- Segunda linha -->
-  <section>
-    <div class="col-md-8">
-      <p>bloco 1</p>
-    </div>
-
-    <div class="col-md-4">
-      <p>bloco 2</p>
-    </div>
-  </section>
+      <div class="col-md-4 gerente">
+        <h2>Meu Gerente <a class="link">Fale comigo</a></h2>
+        <div class="card">
+          <h2 class="nome">Jane Doe <span><img  class="avatar" src="https://www.w3schools.com/w3images/avatar6.png" alt="avatar"></span></h2>
+          <p class="title">Gerente de Relacionamento</p>
+          <ul class="list-contatos">
+            <li class="list-contatos-item">jane.doe@itau.com.br <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></li>
+            <li class="list-contatos-item">(11) 99999-9999 <span class="glyphicon glyphicon-phone" aria-hidden="true"></span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+</div>
 
 
 </body>
