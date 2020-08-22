@@ -82,9 +82,10 @@
   }
 
   &__profile {
-    margin-left: 5.4rem;
-    border-left: 1px solid $defaultTextColor;
-    padding: 0 0 0 5.5rem;
+    cursor: pointer;
+    margin: 0 0 0 5.4rem;
+    border-left: 1px solid #FFF;
+    padding: 1.8rem 0 0 2.5rem;
     height: 7rem;
 
     &-title {
@@ -116,9 +117,9 @@
 
   &__sign-out {
     cursor: pointer;
-    margin: 1.8rem 0 0 5.4rem;
+    margin: 0 0 0 5.4rem;
     border-left: 1px solid $defaultTextColor;
-    padding: 0 0 0 2.5rem;
+    padding: 1.8rem 0 0 2.5rem;
     height: 7rem;
 
     & p {
@@ -128,6 +129,20 @@
       background-position: 40px 9px;
       background-color: $bg-light-black;
       padding: 0 3rem 0 0;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .header {
+    &__search,
+    &__profile {
+      display: none;
+    }
+
+    &__sign-out {
+      float: right;
+      margin: 0 2rem 0 5.4rem;
     }
   }
 }

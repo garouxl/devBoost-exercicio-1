@@ -95,9 +95,10 @@ header + section {
     padding: 1.9rem 1rem .9rem 4rem;
     font-size: 1.9rem; }
   .header__profile {
-    margin-left: 5.4rem;
+    cursor: pointer;
+    margin: 0 0 0 5.4rem;
     border-left: 1px solid #FFF;
-    padding: 0 0 0 5.5rem;
+    padding: 1.8rem 0 0 2.5rem;
     height: 7rem; }
     .header__profile-title {
       text-transform: uppercase;
@@ -116,9 +117,9 @@ header + section {
           font-size: 1.5rem; }
   .header__sign-out {
     cursor: pointer;
-    margin: 1.8rem 0 0 5.4rem;
+    margin: 0 0 0 5.4rem;
     border-left: 1px solid #FFF;
-    padding: 0 0 0 2.5rem;
+    padding: 1.8rem 0 0 2.5rem;
     height: 7rem; }
     .header__sign-out p {
       font-size: 2.4rem;
@@ -127,6 +128,13 @@ header + section {
       background-position: 40px 9px;
       background-color: #1E1E1E;
       padding: 0 3rem 0 0; }
+
+@media (max-width: 800px) {
+  .header__search, .header__profile {
+    display: none; }
+  .header__sign-out {
+    float: right;
+    margin: 0 2rem 0 5.4rem; } }
 
 .col-md-4 span, .col-md-4 a.link {
   float: right; }
