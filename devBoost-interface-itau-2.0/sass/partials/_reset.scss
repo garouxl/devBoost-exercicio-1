@@ -1,3 +1,7 @@
+$bg-dark-black: #121212;
+$bg-light-black: #1E1E1E;
+$border: #363636;
+
 *,
 *::after,
 *::before {
@@ -14,7 +18,7 @@
 
 html {
   font-size: 62.5%;
-  background-color: #121212;
+  background-color: $bg-dark-black;
 }
 
 body {
@@ -34,8 +38,8 @@ p {
 }
 
 .card {
-  background-color: #1E1E1E;
-  border: 1px solid #363636;
+  background-color: $bg-light-black;
+  border: 1px solid $border;
   border-radius: 8px;
   color: #ffffff;
   padding: 1.6rem;
