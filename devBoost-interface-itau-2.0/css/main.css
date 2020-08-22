@@ -1,41 +1,59 @@
-*,
-*::after,
-*::before {
+*, *::after, *::before {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
   outline: 0;
-  backface-visibility: hidden; }
+  backface-visibility: hidden;
+}
 
 *:focus {
-  outline: none; }
+  outline: none;
+}
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  background-color: #121212;
+  font-family: Arial, sans-serif;
+}
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 h1 {
-  font-size: 2.4rem; }
+  font-size: 2.4rem;
+}
 
 h2 {
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+}
 
 h3 {
-  font-size: 1.4rem; }
+  font-size: 1.4rem;
+}
 
 .header {
-  color: orange; }
+  color: orange;
+}
 
 .saldo {
-  color: red; }
+  color: red;
+}
 
 .gerente {
-  color: blue; }
+  color: blue;
+}
 
 .lancamentos {
-  color: green; }
+  color: green;
+}
 
 .lancamentos {
-  color: grey; }
+  color: grey;
+}
+
+.card {
+  background-color: #1E1E1E;
+  border: 1px solid #363636;
+  border-radius: 8px;
+}
