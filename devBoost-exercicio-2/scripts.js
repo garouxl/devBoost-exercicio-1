@@ -52,7 +52,7 @@ function stopCounter(timerRef, btnRef, inputRef) {
 
 function insertTask(description) {
   var listTask = document.querySelector(".list-task");
-  var listTaskItems = document.querySelector(
+  var listTaskItems = document.querySelectorAll(
     ".list-task:not(.result) .list-task-item"
   );
   var result = document.querySelector(".list-task.result");
@@ -69,7 +69,7 @@ function insertTask(description) {
 
   listTask.appendChild(child);
 
-  if (!listTaskItems) {
+  if (listTaskItems.length === 0) {
     result.style.display = "block";
   }
 }
