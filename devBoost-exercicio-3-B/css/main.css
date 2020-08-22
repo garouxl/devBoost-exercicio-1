@@ -3,7 +3,8 @@
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit; }
+  box-sizing: inherit;
+  outline: 0; }
 
 html {
   font-size: 62.5%;
@@ -25,7 +26,7 @@ body {
   .button-list__button {
     position: relative;
     font-weight: normal;
-    font-size: .9rem;
+    font-size: 1.2rem;
     font-family: 'Ubuntu', sans-serif;
     cursor: pointer;
     border-radius: 3px;
