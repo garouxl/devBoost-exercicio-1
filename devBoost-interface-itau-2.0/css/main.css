@@ -1,0 +1,41 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  outline: 0;
+  backface-visibility: hidden; }
+
+*:focus {
+  outline: none; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+h2 {
+  font-size: 2.4rem; }
+
+h3 {
+  font-size: 1.6rem; }
+
+p {
+  font-size: 1.4rem; }
+
+.header {
+  color: orange; }
+
+.saldo {
+  color: red; }
+
+.gerente {
+  color: blue; }
+
+.lancamentos {
+  color: green; }
+
+.credito {
+  color: grey; }
