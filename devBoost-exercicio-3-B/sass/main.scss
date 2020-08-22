@@ -73,7 +73,6 @@ $bgColors: (
     font-family: 'Ubuntu', sans-serif;
     cursor: pointer;
     border-radius: 3px;
-    color: #fff;
     padding: .2rem .6em .3rem .6rem;
     margin: 0;
     opacity: 1;
@@ -87,6 +86,10 @@ $bgColors: (
     @each $name, $value in $bgColors {
       &--#{$name} {
         @include setBgColor($value)
+      }
+      &--#{$name}:hover {
+        background-color: darken($value, 10%);
+        border: 1px solid darken($value, 10%);
       }
     }
     @each $name, $value in $txtColors {

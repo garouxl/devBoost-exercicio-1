@@ -30,7 +30,6 @@ body {
     font-family: 'Ubuntu', sans-serif;
     cursor: pointer;
     border-radius: 3px;
-    color: #fff;
     padding: .2rem .6em .3rem .6rem;
     margin: 0;
     opacity: 1;
@@ -42,38 +41,65 @@ body {
       background-color: #007bff;
       border: 1px solid #007bff;
       text-shadow: 0 0 1px black; }
+    .button-list__button--primary:hover {
+      background-color: #0062cc;
+      border: 1px solid #0062cc; }
     .button-list__button--secondary {
       background-color: #6c757d;
       border: 1px solid #6c757d;
       text-shadow: 0 0 1px black; }
+    .button-list__button--secondary:hover {
+      background-color: #545b62;
+      border: 1px solid #545b62; }
     .button-list__button--success {
       background-color: #28a745;
       border: 1px solid #28a745;
       text-shadow: 0 0 1px black; }
+    .button-list__button--success:hover {
+      background-color: #1e7e34;
+      border: 1px solid #1e7e34; }
     .button-list__button--warning {
       background-color: #ffc107;
       border: 1px solid #ffc107;
       text-shadow: 0 0 1px #070500; }
+    .button-list__button--warning:hover {
+      background-color: #d39e00;
+      border: 1px solid #d39e00; }
     .button-list__button--danger {
       background-color: #dc3545;
       border: 1px solid #dc3545;
       text-shadow: 0 0 1px #0f0304; }
+    .button-list__button--danger:hover {
+      background-color: #bd2130;
+      border: 1px solid #bd2130; }
     .button-list__button--info {
       background-color: #17a2b8;
       border: 1px solid #17a2b8;
       text-shadow: 0 0 1px black; }
+    .button-list__button--info:hover {
+      background-color: #117a8b;
+      border: 1px solid #117a8b; }
     .button-list__button--light {
       background-color: #f8f9fa;
       border: 1px solid #f8f9fa;
       text-shadow: 0 0 1px #657a8e; }
+    .button-list__button--light:hover {
+      background-color: #dae0e5;
+      border: 1px solid #dae0e5; }
     .button-list__button--dark {
       background-color: #343a40;
       border: 1px solid #343a40;
       text-shadow: 0 0 1px black; }
+    .button-list__button--dark:hover {
+      background-color: #1d2124;
+      border: 1px solid #1d2124; }
     .button-list__button--link {
       background-color: #ffffff;
       border: 1px solid #ffffff;
       text-shadow: 0 0 1px gray; }
+    .button-list__button--link:hover {
+      background-color: #e6e6e6;
+      border: 1px solid #e6e6e6; }
     .button-list__button--primary {
       color: #fff; }
     .button-list__button--secondary {
