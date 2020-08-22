@@ -16,30 +16,20 @@ html {
 body {
   box-sizing: border-box; }
 
-h2 {
+h1 {
   font-size: 2.4rem; }
 
-h3 {
+h2 {
   font-size: 1.6rem; }
 
-p {
+h3 {
   font-size: 1.4rem; }
 
 .header {
-  display: fixed;
-  border: 1px solid red; }
+  color: orange; }
 
 .saldo {
-  padding: 10px; }
-
-.col-md-4 h2 {
-  color: #1e1e1e;
-  display: flex;
-  justify-content: space-between; }
-  .col-md-4 h2 a {
-    font-size: 1.5rem;
-    text-decoration: none;
-    color: #1e1e1e; }
+  color: red; }
 
 .gerente {
   color: blue; }
@@ -47,5 +37,5 @@ p {
 .lancamentos {
   color: green; }
 
-.credito {
+.lancamentos {
   color: grey; }
