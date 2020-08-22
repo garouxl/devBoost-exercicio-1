@@ -14,7 +14,6 @@ html {
   font-size: 62.5%;
   background-color: #121212;
   font-family: Arial, sans-serif;
-  color: #ffffff
 }
 
 body {
@@ -57,4 +56,5 @@ h3 {
   background-color: #1E1E1E;
   border: 1px solid #363636;
   border-radius: 8px;
+  color: #ffffff
 }
