@@ -1,7 +1,7 @@
 {
-  "name": "natours",
+  "name": "devBoost",
   "version": "1.0.0",
-  "description": "Landing page for natours",
+  "description": "Itau Interface 2.0",
   "main": "index.js",
   "scripts": {
     "start": "npm-run-all --parallel devserver watch:sass",
@@ -10,7 +10,7 @@
     "compile:sass": "node-sass sass/main.scss css/main.css",
     "build:css": "compile:sass"
   },
-  "author": "Jonas",
+  "author": "Equipe 3",
   "license": "ISC",
   "devDependencies": {
     "live-server": "^1.2.1",
