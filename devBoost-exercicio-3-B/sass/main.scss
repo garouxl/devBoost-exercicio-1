@@ -1,0 +1,98 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  height: 90%;
+}
+
+body {
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  font-family: 'Ubuntu',Arial, Helvetica, sans-serif;
+  margin: 1rem;
+
+}
+
+$bgColors: (
+  "primary": #007bff,
+  "secondary":#6c757d,
+  "success": #28a745,
+  "warning":#ffc107,
+  "danger":#dc3545,
+  "info":#17a2b8,
+  "light":#f8f9fa,
+  "dark":#343a40,
+  "link":#ffffff
+ );
+
+ $txtColors: (
+  "primary": #fff,
+  "secondary":#fff,
+  "success": #fff,
+  "warning":#333,
+  "danger":#fff,
+  "info":#fff,
+  "light":#333,
+  "dark":#fff,
+  "link":#007bff
+ );
+
+ @mixin setBgColor($color) {
+   background-color: $color;
+   border: 1px solid $color;
+   text-shadow: 0 0 1px darken($color, 50%);
+ }
+
+ @mixin setTxtColor ($color) {
+   color: $color;
+ }
+
+.button-list {
+  display: flex;
+  justify-items: center;
+
+  &__item {
+    list-style-type: none;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: .5rem
+  }
+
+  &__button {
+    position: relative;
+    font-weight: normal;
+    font-size: .9rem;
+    font-family: 'Ubuntu', sans-serif;
+    cursor: pointer;
+    border-radius: 3px;
+    color: #fff;
+    padding: .2rem .6em .3rem .6rem;
+    margin: 0;
+    opacity: 1;
+    transition: .2s ease-in-out;
+    z-index: 1;
+
+    &:hover {
+      text-shadow: 0 0 0 #000;
+    }
+
+    @each $name, $value in $bgColors {
+      &--#{$name} {
+        @include setBgColor($value)
+      }
+    }
+    @each $name, $value in $txtColors {
+      &--#{$name} {
+        @include setTxtColor($value)
+      }
+    }
+
+  }
+}

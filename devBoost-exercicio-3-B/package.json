@@ -1,0 +1,15 @@
+{
+  "name": "exercicio3",
+  "version": "1.0.0",
+  "description": "botões com Sass",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss -w",
+    "compile:sass": "node-sass sass/main.scss css/main.css"
+  },
+  "author": "Leandro Almeida",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.5.3"
+  }
+}
