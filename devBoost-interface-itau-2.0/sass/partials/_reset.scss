@@ -1,9 +1,9 @@
 $bg-dark-black: #121212;
-$bg-light-black: #1E1E1E;
+$bg-light-black: #1e1e1e;
 $border: #363636;
-$linkCardColor: #E2E8F0;
-$linkCardColorHover: #EC7000;
-$defaultTextColor: #FFF;
+$linkCardColor: #e2e8f0;
+$linkCardColorHover: #ec7000;
+$defaultTextColor: #fff;
 
 $headerHeight: 12.8rem;
 
@@ -18,7 +18,7 @@ $headerHeight: 12.8rem;
 }
 
 *:focus {
-  outline: none
+  outline: none;
 }
 
 html {
@@ -28,6 +28,7 @@ html {
 
 body {
   box-sizing: border-box;
+  background-color: $bg-dark-black;
 }
 
 h2 {
@@ -35,11 +36,11 @@ h2 {
 }
 
 h3 {
-  font-size: 1.6rem
+  font-size: 1.6rem;
 }
 
 p {
-  font-size: 1.4rem
+  font-size: 1.4rem;
 }
 
 .wrapper {
