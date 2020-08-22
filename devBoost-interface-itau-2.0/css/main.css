@@ -33,12 +33,18 @@ p {
   color: #ffffff;
   padding: 1.6rem; }
 
+header + section {
+  margin-top: 12.8rem; }
+
 .header {
-  position: relative;
-  background-color: #1e1e1e;
+  position: fixed;
+  background-color: #1E1E1E;
   color: #fff;
   padding: 2.9rem 0 0 3.5rem;
-  height: 12.8rem; }
+  height: 12.8rem;
+  width: 100%;
+  top: 0;
+  z-index: 999; }
   .header::after {
     content: "";
     clear: both;
@@ -50,7 +56,7 @@ p {
     width: 6.7rem;
     height: 6.7rem; }
   .header__menu {
-    border-left: 1px solid #fff;
+    border-left: 1px solid #FFF;
     margin-left: 2.7rem;
     height: 7rem;
     padding-left: 4.5rem; }
@@ -58,14 +64,14 @@ p {
       cursor: pointer;
       position: relative;
       display: block;
-      border-top: 2px solid #fff;
+      border-top: 2px solid #FFF;
       width: 2.5rem;
       top: 30px; }
       .header__menu-gliph::after, .header__menu-gliph::before {
         content: "";
         position: absolute;
         left: 0px;
-        border-top: 2px solid #fff;
+        border-top: 2px solid #FFF;
         width: 2.5rem; }
       .header__menu-gliph::before {
         top: -11px; }
@@ -83,14 +89,14 @@ p {
     background-image: url(../../img/lupa.png);
     background-repeat: no-repeat;
     background-position: 7px 24px;
-    background-color: #1e1e1e;
+    background-color: #1E1E1E;
     width: 44.8rem;
     border-bottom: 1px solid;
     padding: 1.9rem 1rem .9rem 4rem;
     font-size: 1.9rem; }
   .header__profile {
     margin-left: 5.4rem;
-    border-left: 1px solid #fff;
+    border-left: 1px solid #FFF;
     padding: 0 0 0 5.5rem;
     height: 7rem; }
     .header__profile-title {
@@ -111,7 +117,7 @@ p {
   .header__sign-out {
     cursor: pointer;
     margin: 1.8rem 0 0 5.4rem;
-    border-left: 1px solid #fff;
+    border-left: 1px solid #FFF;
     padding: 0 0 0 2.5rem;
     height: 7rem; }
     .header__sign-out p {
@@ -119,7 +125,7 @@ p {
       background-image: url(../../img/seta.png);
       background-repeat: no-repeat;
       background-position: 40px 9px;
-      background-color: #1e1e1e;
+      background-color: #1E1E1E;
       padding: 0 3rem 0 0; }
 
 .col-md-4 span, .col-md-4 a.link {

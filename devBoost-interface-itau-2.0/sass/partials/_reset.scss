@@ -5,6 +5,8 @@ $linkCardColor: #E2E8F0;
 $linkCardColorHover: #EC7000;
 $defaultTextColor: #FFF;
 
+$headerHeight: 12.8rem;
+
 *,
 *::after,
 *::before {
@@ -46,4 +48,9 @@ p {
   border-radius: 8px;
   color: #ffffff;
   padding: 1.6rem;
+}
+
+header + section {
+  margin-top: $headerHeight;
+
 }
