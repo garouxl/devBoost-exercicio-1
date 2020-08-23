@@ -29,6 +29,10 @@ html {
 body {
   box-sizing: border-box;
   background-color: $bg-dark-black;
+
+  @media (min-width: 768px) {
+    padding-top: calc(#{12.8rem} + 5rem);
+  }
 }
 
 h2 {
@@ -55,8 +59,4 @@ p {
   border-radius: 8px;
   color: #ffffff;
   padding: 1.6rem;
-}
-
-header + section {
-  margin-top: $headerHeight;
 }

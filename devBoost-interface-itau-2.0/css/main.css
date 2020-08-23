@@ -17,6 +17,9 @@ html {
 body {
   box-sizing: border-box;
   background-color: #121212; }
+  @media (min-width: 768px) {
+    body {
+      padding-top: calc(12.8rem + 5rem); } }
 
 h2 {
   font-size: 2.4rem;
@@ -38,9 +41,6 @@ p {
   border-radius: 8px;
   color: #ffffff;
   padding: 1.6rem; }
-
-header + section {
-  margin-top: 12.8rem; }
 
 .header {
   position: fixed;
