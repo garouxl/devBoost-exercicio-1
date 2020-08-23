@@ -10,8 +10,6 @@
 
 # production
 /build
-/css
-/img/*.identifier
 
 # misc
 .DS_Store
