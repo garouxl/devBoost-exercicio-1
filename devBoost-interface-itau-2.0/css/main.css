@@ -39,8 +39,12 @@ p {
   color: #ffffff;
   padding: 1.6rem; }
 
-header + section {
+main {
   margin-top: 12.8rem; }
+  main::after {
+    content: "";
+    clear: both;
+    display: table; }
 
 .header {
   position: fixed;

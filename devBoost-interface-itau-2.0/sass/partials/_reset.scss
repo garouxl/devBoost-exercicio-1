@@ -57,6 +57,11 @@ p {
   padding: 1.6rem;
 }
 
-header + section {
+main {
   margin-top: $headerHeight;
+  &::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 }
