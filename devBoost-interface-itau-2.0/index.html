@@ -27,239 +27,268 @@
   </head>
 
   <body>
-    <div class="wrapper">
-      <header class="header">
-        <a class="header__logo-link" href="#" title="Itau Internet Banking 2.0">
-          <img
-            width="67"
-            height="67"
-            class="header__logo-img"
-            src="img/logo.svg"
-            alt="logo do Itau"
-          />
-        </a>
-        <nav class="header__menu">
-          <span class="header__menu-gliph"></span>
-          <span class="header__menu-cta">menu</span>
-        </nav>
-        <input
-          class="header__search"
-          type="search"
-          name="search"
-          id="search"
-          placeholder="Buscar..."
-        />
-        <section class="header__profile">
-          <p class="header__profile-title">João Silva</p>
-          <div>
-            <p><strong>Ag</strong></p>
-            <p>1234</p>
-          </div>
-          <div>
-            <p><strong>Conta</strong></p>
-            <p>12345-5</p>
-          </div>
-        </section>
-        <section class="header__sign-out">
-          <p>sair</p>
-          <i></i>
-        </section>
-      </header>
-      <main>
-        <!-- Primeira linha -->
-        <section class="container">
+    <header>
+      <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
           <div class="row">
-            <div class="col-md-8">
-              <h2>Últimos lançamentos</h2>
-              <div class="card">
-                <table class="table">
-                  <thead>
-                    <tr>
-                      <th scope="col">#</th>
-                      <th scope="col">Nome</th>
-                      <th scope="col">Valor</th>
-                      <th scope="col">Data</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">1</th>
-                      <td>Estabelecimento A</td>
-                      <td>R$ 70,00</td>
-                      <td>10/07/21</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">2</th>
-                      <td>Estabelecimento B</td>
-                      <td>R$ 50,00</td>
-                      <td>10/07/21</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">3</th>
-                      <td>Estabelecimento C</td>
-                      <td>R$ 80,00</td>
-                      <td>10/07/21</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+            <div class="col-md-3 col-sm-4 col-xs-6">
+              <a class="navbar-brand" href="#"
+                ><img src="./img/logo.svg" alt="Logo Itaú"
+              /></a>
+              <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
             </div>
+            <div class="col-md-5 col-sm-6 search-bar">
+              <form class="navbar-search">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Buscar..."
+                />
+              </form>
+            </div>
+            <div
+              class="col-md-3 col-md-offset-1 col-sm-2 col-sm-offset-0 col-xs-1 col-xs-offset-5"
+            >
+              <ul class="nav navbar-nav navbar-right">
+                <li class="user-account">
+                  <h3>Olá, Fulano</h3>
 
-            <div class="col-md-4 saldo">
-              <h2>Saldos <a class="link">Ver extrato</a></h2>
-              <div class="card">
-                <p>
+                  <div class="row">
+                    <div class="col-sm-5">
+                      <p><strong>Ag.</strong></p>
+                    </div>
+                    <div class="col-sm-7">
+                      <p><strong>Conta</strong></p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-5">
+                      <p><strong>1234</strong></p>
+                    </div>
+                    <div class="col-sm-7">
+                      <p><strong>1234-5</strong></p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a href="#" class="sign-out"
+                    >Sair
+                    <img src="./img/seta.png" alt="Sair" />
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="search">
+                    <img src="./img/lupa.png" alt="Buscar" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+      </nav>
+    </header>
+    <main>
+      <!-- Primeira linha -->
+      <section class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <h2>Últimos lançamentos</h2>
+            <div class="card">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Valor</th>
+                    <th scope="col">Data</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Estabelecimento A</td>
+                    <td>R$ 70,00</td>
+                    <td>10/07/21</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Estabelecimento B</td>
+                    <td>R$ 50,00</td>
+                    <td>10/07/21</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Estabelecimento C</td>
+                    <td>R$ 80,00</td>
+                    <td>10/07/21</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="col-md-4 saldo">
+            <h2>Saldos <a class="link">Ver extrato</a></h2>
+            <div class="card">
+              <p>
+                <span
+                  class="glyphicon glyphicon-eye-open"
+                  aria-hidden="true"
+                  id="btn-saldo"
+                ></span>
+              </p>
+              <ul class="list-values">
+                <li class="list-values-item">
+                  Saldo em conta corrente <span class="saldo">R$ 1.000,00</span>
+                </li>
+                <li class="list-values-item">
+                  Saldo em conta poupança <span class="saldo">R$ 6.000,00</span>
+                </li>
+              </ul>
+              <p class="total">
+                Saldo Total: <span class="saldo">R$ 7.000,00</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Segunda linha -->
+      <section class="container">
+        <div class="row">
+          <div class="credit col-md-8">
+            <h2>Cartões de crédito</h2>
+            <div class="credit__card card">
+              <!-- CARD HEADER -->
+              <div class="row">
+                <div class="credit__card__header">
+                  <div class="col-xs-7 col-sm-6 col-md-8">
+                    <h3>Itaucard Multiplo 2.0 Mastercard</h3>
+                  </div>
+                  <div
+                    class="col-sm-4 col-sm-offset-2 col-md-offset-0 col-md-4 text-right"
+                  >
+                    <a href="#" onclick="toogleCardInfo(this)">expandir</a>
+                  </div>
+                  <div class="col-xs-12">
+                    <div class="credit__card__header__bandeira">
+                      <img
+                        src="./img/mastercard-logo.png"
+                        alt="Mastercard logo"
+                      />
+                      <h2>Final 7109</h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- END CARD HEADER -->
+
+              <!-- CARD BODY -->
+              <div class="row toogle-info-card hide">
+                <div class="credit__card__body">
+                  <div class="row">
+                    <div class="col-xs-6 col-sm-5 col-sm-offset-1">
+                      <h3>Fatura fechada</h3>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                      <h3 class="text-right">venc. 05 set.</h3>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-11 col-sm-offset-1">
+                      <h2>R$ 4.506,30</h2>
+                    </div>
+                  </div>
+                  <div class="row no-margin-bottom">
+                    <div class="col-xs-6 col-sm-5 col-sm-offset-1">
+                      <p>Limite disponível</p>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                      <p class="text-right">Total</p>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-sm-9 col-sm-offset-1">
+                      <div class="progress">
+                        <div
+                          class="progress-bar"
+                          role="progressbar"
+                          aria-valuenow="25"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row credit__card__body__values">
+                    <div class="col-xs-6 col-sm-5 col-sm-offset-1">
+                      <p>R$ 11.067,50</p>
+                    </div>
+                    <div class="col-xs-6 col-sm-4">
+                      <p class="text-right">R$ 22.400,00</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- END CARD BODY -->
+
+              <!-- CARD FOOTER -->
+              <div class="row">
+                <div class="credit__card__footer">
+                  <div class="col-xs-3 col-sm-offset-1">
+                    <a href="#">Pagar</a>
+                  </div>
+                  <div class="col-xs-8">
+                    <a href="#">Ver detalhes</a>
+                  </div>
+                </div>
+              </div>
+              <!-- END CARD FOOTER -->
+            </div>
+          </div>
+
+          <div class="col-md-4 gerente">
+            <h2>Meu Gerente <a class="link">Fale comigo</a></h2>
+            <div class="card">
+              <h2 class="nome">
+                Jane Doe
+                <span
+                  ><img
+                    class="avatar"
+                    src="https://www.w3schools.com/w3images/avatar6.png"
+                    alt="avatar"
+                /></span>
+              </h2>
+              <p class="title">Gerente de Relacionamento</p>
+              <ul class="list-contatos">
+                <li class="list-contatos-item">
+                  jane.doe@itau.com.br
                   <span
-                    class="glyphicon glyphicon-eye-open"
+                    class="glyphicon glyphicon-envelope"
                     aria-hidden="true"
-                    id="btn-saldo"
                   ></span>
-                </p>
-                <ul class="list-values">
-                  <li class="list-values-item">
-                    Saldo em conta corrente <span class="saldo">R$ 1.000,00</span>
-                  </li>
-                  <li class="list-values-item">
-                    Saldo em conta poupança <span class="saldo">R$ 6.000,00</span>
-                  </li>
-                </ul>
-                <p class="total">
-                  Saldo Total: <span class="saldo">R$ 7.000,00</span>
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Segunda linha -->
-        <section class="container">
-          <div class="row">
-            <div class="credit col-md-8">
-              <h2>Cartões de crédito</h2>
-              <div class="credit__card card">
-                <!-- CARD HEADER -->
-                <div class="row">
-                  <div class="credit__card__header">
-                    <div class="col-xs-7 col-sm-6 col-md-8">
-                      <h3>Itaucard Multiplo 2.0 Mastercard</h3>
-                    </div>
-                    <div
-                      class="col-sm-4 col-sm-offset-2 col-md-offset-0 col-md-4 text-right"
-                    >
-                      <a href="#" onclick="toogleCardInfo(this)">expandir</a>
-                    </div>
-                    <div class="col-xs-12">
-                      <div class="credit__card__header__bandeira">
-                        <img
-                          src="./img/mastercard-logo.png"
-                          alt="Mastercard logo"
-                        />
-                        <h2>Final 7109</h2>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- END CARD HEADER -->
-
-                <!-- CARD BODY -->
-                <div class="row toogle-info-card hide">
-                  <div class="credit__card__body">
-                    <div class="row">
-                      <div class="col-xs-6 col-sm-5 col-sm-offset-1">
-                        <h3>Fatura fechada</h3>
-                      </div>
-                      <div class="col-xs-6 col-sm-4">
-                        <h3 class="text-right">venc. 05 set.</h3>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-sm-11 col-sm-offset-1">
-                        <h2>R$ 4.506,30</h2>
-                      </div>
-                    </div>
-                    <div class="row no-margin-bottom">
-                      <div class="col-xs-6 col-sm-5 col-sm-offset-1">
-                        <p>Limite disponível</p>
-                      </div>
-                      <div class="col-xs-6 col-sm-4">
-                        <p class="text-right">Total</p>
-                      </div>
-                    </div>
-
-                    <div class="row">
-                      <div class="col-sm-9 col-sm-offset-1">
-                        <div class="progress">
-                          <div
-                            class="progress-bar"
-                            role="progressbar"
-                            aria-valuenow="25"
-                            aria-valuemin="0"
-                            aria-valuemax="100"
-                          ></div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row credit__card__body__values">
-                      <div class="col-xs-6 col-sm-5 col-sm-offset-1">
-                        <p>R$ 11.067,50</p>
-                      </div>
-                      <div class="col-xs-6 col-sm-4">
-                        <p class="text-right">R$ 22.400,00</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- END CARD BODY -->
-
-                <!-- CARD FOOTER -->
-                <div class="row">
-                  <div class="credit__card__footer">
-                    <div class="col-xs-3 col-sm-offset-1">
-                      <a href="#">Pagar</a>
-                    </div>
-                    <div class="col-xs-8">
-                      <a href="#">Ver detalhes</a>
-                    </div>
-                  </div>
-                </div>
-                <!-- END CARD FOOTER -->
-              </div>
-            </div>
-
-            <div class="col-md-4 gerente">
-              <h2>Meu Gerente <a class="link">Fale comigo</a></h2>
-              <div class="card">
-                <h2 class="nome">
-                  Jane Doe
+                </li>
+                <li class="list-contatos-item">
+                  (11) 99999-9999
                   <span
-                    ><img
-                      class="avatar"
-                      src="https://www.w3schools.com/w3images/avatar6.png"
-                      alt="avatar"
-                  /></span>
-                </h2>
-                <p class="title">Gerente de Relacionamento</p>
-                <ul class="list-contatos">
-                  <li class="list-contatos-item">
-                    jane.doe@itau.com.br
-                    <span
-                      class="glyphicon glyphicon-envelope"
-                      aria-hidden="true"
-                    ></span>
-                  </li>
-                  <li class="list-contatos-item">
-                    (11) 99999-9999
-                    <span
-                      class="glyphicon glyphicon-phone"
-                      aria-hidden="true"
-                    ></span>
-                  </li>
-                </ul>
-              </div>
+                    class="glyphicon glyphicon-phone"
+                    aria-hidden="true"
+                  ></span>
+                </li>
+              </ul>
             </div>
           </div>
-        </section>
-      </main>
-    </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

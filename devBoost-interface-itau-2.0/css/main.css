@@ -16,7 +16,14 @@ html {
 
 body {
   box-sizing: border-box;
-  background-color: #121212; }
+  background-color: #121212;
+  padding-bottom: 40px; }
+  @media (min-width: 768px) {
+    body {
+      padding-top: 12rem; } }
+  @media (max-width: 767px) {
+    body {
+      padding-top: 13rem; } }
 
 h2 {
   font-size: 2.4rem;
@@ -28,133 +35,97 @@ h3 {
 p {
   font-size: 1.4rem; }
 
-.wrapper {
-  width: 124rem;
-  margin: auto; }
-
 .card {
   background-color: #1e1e1e;
   border: 1px solid #363636;
   border-radius: 8px;
   color: #ffffff;
-  padding: 1.6rem; }
+  padding: 1.6rem;
+  min-height: 256px; }
+  @media (max-width: 991px) {
+    .card {
+      margin-bottom: 4rem; } }
 
-main {
-  margin-top: 12.8rem; }
-  main::after {
-    content: "";
-    clear: both;
-    display: table; }
-
-.header {
-  position: fixed;
-  background-color: #1e1e1e;
-  border-left: 1px solid #363636;
-  border-right: 1px solid #363636;
-  border-bottom: 1px solid #363636;
-  color: #fff;
-  padding: 2.9rem 3.5rem 0 3.5rem;
-  border-radius: 0 0 8px 8px;
-  height: 12.8rem;
-  width: 124rem;
-  top: 0;
-  z-index: 999; }
-  .header::after {
-    content: "";
-    clear: both;
-    display: table; }
-  .header > * {
+header .navbar-default {
+  background: #1e1e1e;
+  border-color: #1e1e1e;
+  padding: 2rem 0;
+  color: #fff; }
+  header .navbar-default .navbar-nav h3 {
+    padding: 0;
+    margin: 0; }
+  header .navbar-default .navbar-nav li a {
+    color: #fff;
+    font-size: 1.8rem;
+    padding: 0; }
+    header .navbar-default .navbar-nav li a:hover {
+      color: #fff;
+      text-decoration: underline; }
+  header .navbar-default .navbar-brand {
+    padding: 0px 1.5rem;
+    height: auto; }
+  header .navbar-default .navbar-toggle {
     display: block;
+    border: none;
+    position: relative;
+    margin-right: 5rem;
     float: left; }
-  .header__logo-img {
-    width: 6.7rem;
-    height: 6.7rem; }
-  .header__menu {
-    border-left: 1px solid #fff;
-    margin-left: 2.7rem;
-    height: 7rem;
-    padding-left: 4.5rem; }
-    .header__menu-gliph {
-      cursor: pointer;
-      position: relative;
-      display: block;
-      border-top: 2px solid #fff;
-      width: 2.5rem;
-      top: 30px; }
-      .header__menu-gliph::after, .header__menu-gliph::before {
-        content: "";
-        position: absolute;
-        left: 0px;
-        border-top: 2px solid #fff;
-        width: 2.5rem; }
-      .header__menu-gliph::before {
-        top: -11px; }
-      .header__menu-gliph::after {
-        top: 7px; }
-    .header__menu-cta {
-      cursor: pointer;
-      margin-left: 3.6rem;
-      font-size: 2.5rem;
-      padding-top: 1rem;
-      display: block; }
-      .header__menu-cta:hover {
-        color: #ec7000;}
-  .header__search {
-    margin: 0 .6rem 0 6.7rem;
-    border: 0;
-    background-image: url("../img/lupa.png");
-    background-repeat: no-repeat;
-    background-position: 7px 24px;
+    header .navbar-default .navbar-toggle:after {
+      content: "MENU";
+      position: absolute;
+      right: -4.5rem;
+      color: #fff;
+      top: 8px;
+      font-size: 1.6rem; }
+    header .navbar-default .navbar-toggle:hover, header .navbar-default .navbar-toggle:focus {
+      background: none; }
+    header .navbar-default .navbar-toggle .icon-bar {
+      width: 30px;
+      height: 3px;
+      background: #fff; }
+  header .navbar-default .navbar-search input {
+    background: url(../../img/lupa.png) no-repeat center left 8px;
     background-color: #1e1e1e;
-    width: 29rem;
+    border: 0;
     border-bottom: 1px solid;
-    padding: 1.9rem 1rem .9rem 4rem;
-    font-size: 1.9rem; }
-  .header__profile {
-    cursor: pointer;
-    margin: 0 0 0 5.4rem;
-    border-left: 1px solid #FFF;
-    padding: 1.8rem 0 0 2.5rem;
-    height: 7rem; }
-    .header__profile-title {
-      text-transform: uppercase;
-      margin: -3.4rem 0 0;
-      font-size: 2.1rem; }
-    .header__profile div {
-      display: block;
-      float: left;
-      margin-top: 1.1rem; }
-      .header__profile div + div {
-        margin-left: 2.5rem; }
-      .header__profile div p {
-        margin: 0;
-        font-size: 2rem; }
-        .header__profile div p + p {
-          font-size: 1.5rem; }
-  .header__sign-out {
-    cursor: pointer;
-    margin: 0 0 0 5.4rem;
-    border-left: 1px solid #fff;
-    padding: 1.8rem 0 0 2.5rem;
-    height: 7rem;
-    float: right; }
-    .header__sign-out p {
-      font-size: 2.4rem;
-      background-image: url("../img/seta.png");
-      background-repeat: no-repeat;
-      background-position: 40px 9px;
-      background-color: #1e1e1e;
-      padding: 0 3rem 0 0; }
-      .header__sign-out p:hover {
-        color: #ec7000; }
-
-@media (max-width: 800px) {
-  .header {
-    border-radius: 0;
-    border-left: 0;
-    border-right: 0; }
-    .header__search, .header__profile {
+    padding: 2rem 1rem 2rem 4.5rem;
+    font-size: 1.6rem; }
+    header .navbar-default .navbar-search input:focus {
+      box-shadow: none; }
+  @media (max-width: 767px) {
+    header .navbar-default .search-bar {
       display: none; } }
+  header .navbar-default .navbar-right {
+    margin-top: 1.5rem; }
+    header .navbar-default .navbar-right .search {
+      display: none; }
+      @media (max-width: 767px) {
+        header .navbar-default .navbar-right .search {
+          display: block; } }
+    header .navbar-default .navbar-right .user-account {
+      margin-right: 3rem;
+      padding-right: 3rem;
+      border-right: 1px solid #fff;
+      height: 65px;
+      margin-top: -22px; }
+      @media (max-width: 991px) {
+        header .navbar-default .navbar-right .user-account {
+          display: none; } }
+      header .navbar-default .navbar-right .user-account h3 {
+        margin-bottom: 1rem; }
+      header .navbar-default .navbar-right .user-account p {
+        margin: 0;
+        padding: 0; }
+    header .navbar-default .navbar-right .sign-out {
+      display: block; }
+      @media (max-width: 767px) {
+        header .navbar-default .navbar-right .sign-out {
+          display: none; } }
+      header .navbar-default .navbar-right .sign-out:hover {
+        text-decoration: none; }
+      header .navbar-default .navbar-right .sign-out img {
+        width: 13px;
+        opacity: 0.5; }
 
 .col-md-4 span, .col-md-4 a.link {
   float: right; }

@@ -1,161 +1,132 @@
+header {
+  .navbar-default {
+    background: $bg-light-black;
+    border-color: $bg-light-black;
+    padding: 2rem 0;
+    color: #fff;
 
-.header {
-  position: fixed;
-  background-color: $bg-light-black;
-  border-left: 1px solid $border;
-  border-right: 1px solid $border;
-  border-bottom: 1px solid $border;
-  color: #fff;
-  padding: 2.9rem 3.5rem 0 3.5rem;
-  border-radius: 0 0 8px 8px;
-  height: $headerHeight;
-  width: 124rem;
-  top: 0;
-  z-index: 999;
-
-  &::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-
-  & > * {
-    display: block;
-    float: left;
-  }
-
-  &__logo-link {
-
-  }
-  &__logo-img {
-    width: 6.7rem;
-    height: 6.7rem;
-  }
-
-  &__menu {
-    border-left: 1px solid $defaultTextColor;
-    margin-left: 2.7rem;
-    height: 7rem;
-    padding-left: 4.5rem;
-
-    &-gliph {
-      cursor: pointer;
-      position: relative;
-      display: block;
-      border-top: 2px solid $defaultTextColor;
-      width: 2.5rem;
-      top: 30px;
-
-      &::after,
-      &::before {
-        content: "";
-        position: absolute;
-        left: 0px;
-        border-top: 2px solid $defaultTextColor;
-        width: 2.5rem;
-      }
-
-      &::before {
-        top:  -11px
-      }
-
-      &::after {
-        top: 7px
-      }
-    }
-    &-cta {
-      cursor: pointer;
-      margin-left: 3.6rem;
-      font-size: 2.5rem;
-      padding-top: 1rem;
-      display: block;
-
-      &:hover {
-        color: $linkCardColorHover;
-      }
-    }
-  }
-
-  &__search {
-    margin: 0 .6rem 0 6.7rem;
-    border: 0;
-    background-image: url('../img/lupa.png');
-    background-repeat: no-repeat;
-    background-position: 7px 24px;
-    background-color: $bg-light-black;
-    width: 29rem;
-    border-bottom: 1px solid;
-    padding: 1.9rem 1rem .9rem 4rem;
-    font-size: 1.9rem;
-  }
-
-  &__profile {
-    cursor: pointer;
-    margin: 0 0 0 5.4rem;
-    border-left: 1px solid #FFF;
-    padding: 1.8rem 0 0 2.5rem;
-    height: 7rem;
-
-    &-title {
-      text-transform: uppercase;
-      margin: -3.4rem 0 0;
-      font-size: 2.1rem;
-    }
-
-    & div {
-      display: block;
-      float: left;
-      margin-top: 1.1rem;
-
-      & + div {
-        margin-left: 2.5rem;
-      }
-
-      & p {
+    .navbar-nav {
+      h3 {
+        padding: 0;
         margin: 0;
-        font-size: 2rem;
+      }
 
-        & + p {
-          font-size: 1.5rem;
+      li {
+        a {
+          color: #fff;
+          font-size: 1.8rem;
+          padding: 0;
+
+          &:hover {
+            color: #fff;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    .navbar-brand {
+      padding: 0px 1.5rem;
+      height: auto;
+    }
+
+    .navbar-toggle {
+      display: block;
+      border: none;
+      position: relative;
+      margin-right: 5rem;
+      float: left;
+
+      &:after {
+        content: "MENU";
+        position: absolute;
+        right: -4.5rem;
+        color: #fff;
+        top: 8px;
+        font-size: 1.6rem;
+      }
+
+      &:hover,
+      &:focus {
+        background: none;
+      }
+
+      .icon-bar {
+        width: 30px;
+        height: 3px;
+
+        background: #fff;
+      }
+    }
+
+    .navbar-search {
+      input {
+        background: url(../../img/lupa.png) no-repeat center left 8px;
+        background-color: $bg-light-black;
+        border: 0;
+        border-bottom: 1px solid;
+        padding: 2rem 1rem 2rem 4.5rem;
+        font-size: 1.6rem;
+
+        &:focus {
+          box-shadow: none;
+        }
+      }
+    }
+
+    .search-bar {
+      @media (max-width: 767px) {
+        display: none;
+      }
+    }
+
+    .navbar-right {
+      margin-top: 1.5rem;
+
+      .search {
+        display: none;
+
+        @media (max-width: 767px) {
+          display: block;
         }
       }
 
-    }
-  }
+      .user-account {
+        margin-right: 3rem;
+        padding-right: 3rem;
+        border-right: 1px solid #fff;
+        height: 65px;
+        margin-top: -22px;
 
-  &__sign-out {
-    cursor: pointer;
-    margin: 0 0 0 5.4rem;
-    border-left: 1px solid $defaultTextColor;
-    padding: 1.8rem 0 0 2.5rem;
-    height: 7rem;
-    float: right;
+        @media (max-width: 991px) {
+          display: none;
+        }
 
-    & p {
-      font-size: 2.4rem;
-      background-image: url('../img/seta.png');
-      background-repeat: no-repeat;
-      background-position: 40px 9px;
-      background-color: $bg-light-black;
-      padding: 0 3rem 0 0;
+        h3 {
+          margin-bottom: 1rem;
+        }
+        p {
+          margin: 0;
+          padding: 0;
+        }
+      }
 
-      &:hover {
-        color: $linkCardColorHover;
+      .sign-out {
+        display: block;
+
+        @media (max-width: 767px) {
+          display: none;
+        }
+
+        &:hover {
+          text-decoration: none;
+        }
+
+        img {
+          width: 13px;
+          opacity: 0.5;
+        }
       }
     }
   }
 }
-
-@media (max-width: 800px) {
-  .header {
-    border-radius: 0;
-    border-left: 0;
-    border-right: 0;
-    &__search,
-    &__profile {
-      display: none;
-    }
-  }
-}
-
-
