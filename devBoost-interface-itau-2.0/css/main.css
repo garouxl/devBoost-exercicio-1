@@ -102,7 +102,7 @@ main {
   .header__search {
     margin: 0 .6rem 0 6.7rem;
     border: 0;
-    background-image: url(../../img/lupa.png);
+    background-image: url("../../img/lupa.png");
     background-repeat: no-repeat;
     background-position: 7px 24px;
     background-color: #1e1e1e;
@@ -140,7 +140,7 @@ main {
     float: right; }
     .header__sign-out p {
       font-size: 2.4rem;
-      background-image: url(../../img/seta.png);
+      background-image: url("../../img/seta.png");
       background-repeat: no-repeat;
       background-position: 40px 9px;
       background-color: #1e1e1e;
