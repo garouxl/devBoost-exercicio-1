@@ -98,11 +98,11 @@ main {
       padding-top: 1rem;
       display: block; }
       .header__menu-cta:hover {
-        color: #ec7000; }
+        color: #ec7000;}
   .header__search {
     margin: 0 .6rem 0 6.7rem;
     border: 0;
-    background-image: url("../../img/lupa.png");
+    background-image: url("../img/lupa.png");
     background-repeat: no-repeat;
     background-position: 7px 24px;
     background-color: #1e1e1e;
@@ -140,7 +140,7 @@ main {
     float: right; }
     .header__sign-out p {
       font-size: 2.4rem;
-      background-image: url("../../img/seta.png");
+      background-image: url("../img/seta.png");
       background-repeat: no-repeat;
       background-position: 40px 9px;
       background-color: #1e1e1e;
@@ -241,7 +241,7 @@ main {
         margin-left: 1rem;
         width: 19px;
         height: 10px;
-        background: url(../../img/seta-baixo.png);
+        background: url(../img/seta-baixo.png);
         transition: transform 0.5s; }
       .credit__card__header a.card-open:after {
         transform: rotate(180deg); }
