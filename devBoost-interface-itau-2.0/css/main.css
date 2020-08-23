@@ -49,8 +49,12 @@ main {
 .header {
   position: fixed;
   background-color: #1e1e1e;
+  border-left: 1px solid #363636;
+  border-right: 1px solid #363636;
+  border-bottom: 1px solid #363636;
   color: #fff;
   padding: 2.9rem 3.5rem 0 3.5rem;
+  border-radius: 0 0 8px 8px;
   height: 12.8rem;
   width: 124rem;
   top: 0;
@@ -114,7 +118,7 @@ main {
     height: 7rem; }
     .header__profile-title {
       text-transform: uppercase;
-      margin: -1.4rem 0 0;
+      margin: -3.4rem 0 0;
       font-size: 2.1rem; }
     .header__profile div {
       display: block;
@@ -145,8 +149,12 @@ main {
         color: #ec7000; }
 
 @media (max-width: 800px) {
-  .header__search, .header__profile {
-    display: none; } }
+  .header {
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0; }
+    .header__search, .header__profile {
+      display: none; } }
 
 .col-md-4 span, .col-md-4 a.link {
   float: right; }
