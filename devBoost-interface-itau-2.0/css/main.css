@@ -84,7 +84,7 @@ header .navbar-default {
       height: 3px;
       background: #fff; }
   header .navbar-default .navbar-search input {
-    background: url(../../img/lupa.png) no-repeat center left 8px;
+    background: url(../img/lupa.png) no-repeat center left 8px;
     background-color: #1e1e1e;
     border: 0;
     border-bottom: 1px solid;
