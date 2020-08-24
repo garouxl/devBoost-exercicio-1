@@ -1,3 +1,23 @@
 .lancamentos {
-  color: green
+  .table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: $bg-dark-black;
+  }
+
+  h2 {
+    display: inline;
+  }
+
+  .link {
+    float: right;
+    font-size: 1.5rem;
+    color: #e2e8f0;
+    margin-right: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+
+    &:hover {
+      color: #ec7000;
+    }
+  }
 }

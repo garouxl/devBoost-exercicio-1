@@ -38,6 +38,10 @@
         float: none;
         font-size: 1.6rem;
 
+        &:hover {
+          color: #ec7000;
+        }
+
         &:after {
           content: "";
           display: inline-block;
@@ -110,6 +114,10 @@
       padding-bottom: 20px;
       a {
         font-size: 1.6rem;
+
+        &:hover {
+          color: #ec7000;
+        }
       }
     }
   }

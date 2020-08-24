@@ -20,7 +20,7 @@ body {
   padding-bottom: 40px; }
   @media (min-width: 768px) {
     body {
-      padding-top: 12rem; } }
+      padding-top: 14rem; } }
   @media (max-width: 767px) {
     body {
       padding-top: 13rem; } }
@@ -177,8 +177,22 @@ header .navbar-default {
     border-radius: 50%;
     float: right; }
 
-.lancamentos {
-  color: green; }
+.lancamentos .table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #121212; }
+
+.lancamentos h2 {
+  display: inline; }
+
+.lancamentos .link {
+  float: right;
+  font-size: 1.5rem;
+  color: #e2e8f0;
+  margin-right: 10px;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: bold; }
+  .lancamentos .link:hover {
+    color: #ec7000; }
 
 .credit {
   margin-top: 2%; }
@@ -205,6 +219,8 @@ header .navbar-default {
       vertical-align: middle;
       float: none;
       font-size: 1.6rem; }
+      .credit__card__header a:hover {
+        color: #ec7000; }
       .credit__card__header a:after {
         content: "";
         display: inline-block;
@@ -250,3 +266,5 @@ header .navbar-default {
     padding-bottom: 20px; }
     .credit__card__footer a {
       font-size: 1.6rem; }
+      .credit__card__footer a:hover {
+        color: #ec7000; }
