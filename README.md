@@ -7,14 +7,21 @@
 - Leandro Almeida
 - Wederson
 
-### exercício de 1 e 2:
-Não precisam de instalação
+# Exercício de 1 e 2:
 
-### exercício 3:
-$ yarn // para instalar
-$ yarn compile:sass // para compilar
+    Não precisam de instalação
 
-### instalando o interface-itau-2.0:
-$ yarn // para instalar
-$ yarn start // para iniciar o live-server com sass reloader
-$ yarn build:css // caso queira apenas montar o css 
+# Exercício 3:
+
+    $ yarn install ou npm install
+    $ yarn compile:sass
+
+# Eercício 4 interface-itau-2.0:
+
+## Instalação
+
+    $ yarn install ou npm install
+
+## Iniciar o projeto
+
+    $ yarn start
