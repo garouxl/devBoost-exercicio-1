@@ -21,6 +21,16 @@
   h2 {
     margin-top: 2rem;
     margin-bottom: 1rem;
+    display: inline-block;
+  }
+
+  a.link {
+    float: right;
+    margin-top: 2.3rem;
+    margin-right: 1.5rem;
+    &:hover {
+      color: #ec7000;
+    }
   }
 
   &__card {

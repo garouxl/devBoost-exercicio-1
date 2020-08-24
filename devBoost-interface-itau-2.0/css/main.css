@@ -208,7 +208,14 @@ header .navbar-default {
     padding: 0; }
   .credit h2 {
     margin-top: 2rem;
-    margin-bottom: 1rem; }
+    margin-bottom: 1rem;
+    display: inline-block; }
+  .credit a.link {
+    float: right;
+    margin-top: 2.3rem;
+    margin-right: 1.5rem; }
+    .credit a.link:hover {
+      color: #ec7000; }
   .credit__card__header {
     margin: 2rem 0;
     overflow: hidden; }
